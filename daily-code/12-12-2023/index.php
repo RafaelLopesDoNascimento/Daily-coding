@@ -12,7 +12,7 @@ class Teste {
 
 
   public function retorno() {
-    if ($_SERVER["REQUEST_METHOD"] === 'POST') {
+    if (isset( $_POST["numero"])) {
       $valor = $_POST["numero"];
       
       if ($valor === "") {
